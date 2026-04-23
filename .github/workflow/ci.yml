@@ -12,9 +12,9 @@ jobs:
     steps:
     #scarica il codice
     - name: Scarica codice dal repo
-      uses: actions/checkout@v5
+      uses: actions/setup-python@v5
       with:
-        python-versione:"3.12"
+        python-version:"3.12"
 
     - name: Installa dipendenze
       run: |
